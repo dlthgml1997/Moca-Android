@@ -16,7 +16,6 @@ import android.support.design.widget.Snackbar
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AlertDialog
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.view.GravityCompat
 import android.support.v7.widget.LinearLayoutManager
@@ -27,8 +26,6 @@ import android.widget.Toast
 import com.example.parkseeun.moca_android.R
 import com.example.parkseeun.moca_android.model.post.PostNearByCafeData
 import com.example.parkseeun.moca_android.model.post.PostNearByCafeResponse
-import com.example.parkseeun.moca_android.network.ApplicationController
-import com.example.parkseeun.moca_android.network.NetworkService
 import com.example.parkseeun.moca_android.ui.location.adapter.LocationMainAdapter
 import com.example.parkseeun.moca_android.ui.location.data.LocationCafeDetailData
 import com.example.parkseeun.moca_android.ui.location.data.MarkerItem
