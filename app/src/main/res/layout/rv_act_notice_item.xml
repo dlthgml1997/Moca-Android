@@ -9,9 +9,9 @@
     android:paddingHorizontal="16dp"
     android:gravity="center_vertical">
         <de.hdodenhof.circleimageview.CircleImageView android:layout_width="56dp" android:layout_height="56dp"
-        android:src="@drawable/ic_launcher_background"/>
+        android:src="@drawable/common_defaultimage"/>
         <ImageView android:layout_width="15dp" android:layout_height="15dp"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/notice_follow"
         android:layout_marginLeft="12dp"/>
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:layout_marginLeft="4dp"

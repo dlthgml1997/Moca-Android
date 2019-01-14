@@ -168,7 +168,7 @@ class ReviewDetailActivity : AppCompatActivity() {
 
     // 댓글 달기
     private fun writeComment() {
-        postWriteCommentResponse = networkService.postWriteComment(User.token, PostWriteCommentData(intent.getIntExtra("review_id", 1), review_detail_submit_btn.text.toString()))
+        postWriteCommentResponse = networkService.postWriteComment(User.token, PostWriteCommentData(intent.getIntExtra("review_id", 1), et_comment_act.text.toString()))
         postWriteCommentResponse.enqueue(object : Callback<PostWriteCommentResponse> {
             override fun onFailure(call: Call<PostWriteCommentResponse>, t: Throwable) {
                 toast(t.message!!.toString())
@@ -178,6 +178,7 @@ class ReviewDetailActivity : AppCompatActivity() {
                 if (response.isSuccessful) {
                     if (response.body()!!.status == 201) {
                         toast("댓글 달기에 성공했습니다.")
+                        et_comment_act.setText("")
                         communicate()
                     }
                     else {
